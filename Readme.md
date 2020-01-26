@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Лев](https://up.htmlacademy.ru/htmlcss/27/user/1342229).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
