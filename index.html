@@ -2,45 +2,51 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>HTML Academy: Седона главная</title>
   </head>
   <body>
     <header>
       <nav>
-        <img class="logo" src="https://via.placeholder.com/150x100" alt=""> 
+        <a><img class="logo" src="https://via.placeholder.com/150x100" alt=""> </a>
         <ul>
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Карта штата</li>
-          <li>Гостиницы</li>
+          <li><a>Информация</a></li>
+          <li><a>Фото и видео</a></li>
+          <li><a>Карта штата</a></li>
+          <li><a>Гостиницы</a></li>
         </ul>
       </nav>
+    </header>
+    <section>
       <img class="welcome" src="https://via.placeholder.com/150x100" alt="">
       <div class="polygon">
-        <h1>Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
+        <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-    </header>
+    </section>
     <main>
       <div class="form title">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>ПОИСК ГОСТИНИЦЫ В седоне</button>
         <form>
-          <label>Дата заезда:</label>
-          <input class="date on">
-          <label>Дата выезда:</label>
-          <input class="date off">
+          <p>
+            <label>Дата заезда:</label>
+            <input class="date on">
+          </p>
+          <p>
+            <label>Дата выезда:</label>
+            <input class="date off">
+          </p>
           <label>Взрослые:</label>
           <input class="parents">
           <label>Дети</label>
-          <input class="kids">        
+          <input class="kids">    
           <button class="search">Найти</button>
         </form>
       </div>
     </main>
     <footer>
-      <div class="info"><p>#visitSEDONA <br> Тел: +7(495) 666-02-66</p></div>
+      <div class="info"><p>#visitSEDONA <br> <a>Тел: +7(495) 666-02-66</a></p></div>
       <div class="social">
         <a href="">twitter</a>
         <a href="">fascebook</a>
