@@ -7,7 +7,7 @@
   <body>
     <header>
       <nav>
-        <a><img class="logo" src="img/logo-sedona.svg" width="100px" alt=""> </a>
+        <a><img class="logo" src="img/logo-sedona.svg" width="100px" alt="Логотип"> </a>
         <ul>
           <li><a a href="">Информация</a></li>
           <li><a a href="">Фото и видео</a></li>
@@ -17,7 +17,7 @@
       </nav>
     </header>
     <section>
-      <img class="welcome" src="img/intro-welcome.svg" width="550px" alt="">
+      <img class="welcome" src="img/intro-welcome.svg" width="550px" alt="Седона">
       <div class="polygon">
         <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -30,7 +30,7 @@
         <p>- №1 -</p>
         <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
        </span>
-       <img src="img/city.jpg" width="800px" height="256px" alt="city">
+       <img src="img/city.jpg" width="800px" height="256px" alt="Город">
       </div>
       <div class="intro">
         <div>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="wrap">
-        <img src="img/bridge.jpg" width="800px" height="256px" alt="devil's bridge">
+        <img src="img/bridge.jpg" width="800px" height="256px" alt="Мост дьявола">
         <span>
         <h3>Там есть Мост дьявола</h3>
         <p>- №2 -</p>
@@ -78,23 +78,28 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button>ПОИСК ГОСТИНИЦЫ В седоне </button>
-        <form>
+        <form method="post" action="">
           <p>
-            <label>Дата заезда:</label>
-            <input class="date on">
+            <label>
+            Дата заезда:
+              <input class="date" name="date on" type="date" >
+            </label>
           </p>
           <p>
-            <label>Дата выезда:</label>
-            <input class="date off">
+            <label>Дата выезда:
+              <input class="date" name="date off" type="date" >
+            </label>
           </p>
-          <label>Взрослые:</label>
-          <input class="parents">
-          <label>Дети</label>
-          <input class="kids">        
+          <label>Взрослые:
+            <input class="number" name="parents" type="number" >
+          </label>
+          <label>Дети
+            <input name="kids" type="number" >        
+          </label>
           <button type="submit" class="search">Найти</button>
         </form>
       </div>
-      <div class="map"><img class="map" src="https://via.placeholder.com/350x350" alt="maps"></div>
+      <div class="map"><img class="map" src="https://via.placeholder.com/350x350" alt="карта"></div>
     </main>
     <footer>
       <div class="info"><p>#visitSEDONA <br> <a>Тел: +7(495) 666-02-66</a></p></div>
