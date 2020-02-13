@@ -19,39 +19,31 @@
     <main>
       <div class="filter-wrap">
         <div class="filter">
-          <div class="left">
-            <form class="filter-1" method="post" action="">
-              <fieldset>
-                <legend>Инфраструктура</legend>
-                <ul>
-                  <li><label><input type="checkbox" name="swimmingpool" >Бассейн</label></li>
-                  <li><label><input type="checkbox" name="parking" >Парковка</label></li>
-                  <li><label><input type="checkbox" name="WI-FI" >WI-FI</label></li>
-                </ul>
-              </fieldset>
-            </form>
-            <form class="filter-2">
-              <fieldset>
-                <legend>Тип жилья</legend>
-                <ul>
-                  <li><label><input type="checkbox" name="hotel" >Гостиница</label></li>
-                  <li><label><input type="checkbox" name="motel" >Мотель</label></li>
-                  <li><label><input type="checkbox" name="appartaments">Аппартаменты</label></li>
-                </ul>
-              </fieldset>
-            </form>
-          </div>
-          <div class="right">
-            <form class="filter-3" method="post" action="">
+          <form class="filter-form" method="post" action="">  
+            <fieldset>
+              <legend>Инфраструктура</legend>
+              <ul>
+                <li><label><input type="checkbox" name="swimmingpool" >Бассейн</label></li>
+                <li><label><input type="checkbox" name="parking" >Парковка</label></li>
+                <li><label><input type="checkbox" name="WI-FI" >WI-FI</label></li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья</legend>
+              <ul>
+                <li><label><input type="checkbox" name="hotel" >Гостиница</label></li>
+                <li><label><input type="checkbox" name="motel" >Мотель</label></li>
+                <li><label><input type="checkbox" name="appartaments">Аппартаменты</label></li>
+              </ul>
+            </fieldset>               
+            <fieldset class="price">
               <label>Стоимость в сутки (Р):
                 <input type="text" name="min price" placeholder="от 0">
                 <input type="text" name="max price" placeholder="до 3000">
-                <input type="range" name="min price">
-                <input type="range" name="max price">
                 <button type="submit">Показать</button>
               </label>
-            </form>
-          </div>
+            </fieldset>
+          </form>
         </div>
         <div class="sort">
           <h2>Найдено:3</h2>
