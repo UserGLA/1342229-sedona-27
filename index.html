@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона главная</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?  family=PT+Sans:400,700&display=swap&subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -25,96 +28,101 @@
     </section>
     <main>
       <div class="wrap">
-       <span>
-        <h3>Настоящий городок</h3>
-        <p>- №1 -</p>
-        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-       </span>
-       <img src="img/city.jpg" width="800px" height="256px" alt="Город">
+        <div class="wrap-text">
+            <h3>Настоящий городок</h3>
+            <p>- №1 -</p>
+            <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+        </div>
+        <div class="wrap-photo">
+          <img src="img/city.jpg" width="800px" height="256px" alt="Город">
+        </div>
       </div>
-      <div class="intro">
-        <div>
-          <img class="icon-1">
+      <ul class="intro">
+        <li class="icon-1">
+          <div class="icon-1-logo"></div>
           <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div>
-          <img class="icon-2">
+          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+        </li>
+        <li class="icon-2">
+          <div class="icon-2-logo"></div>
           <h3>Еда</h3>
-          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div>
-          <img class="icon-3">
+          <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+        </li>
+        <li class="icon-3">
+          <div class="icon-3-logo"></div>
           <h3>Сувениры</h3>
-          <p>Не только китайского, но и местного производства!</p>
-        </div>
-      </div>
+          <p>Не только китайского, но и местного<br> производства!</p>
+        </li>
+      </ul>
       <div class="wrap">
-        <img src="img/bridge.jpg" width="800px" height="256px" alt="Мост дьявола">
-        <span>
+        <div class="wrap-photo">
+          <img src="img/bridge.jpg" width="800px" height="256px" alt="Мост дьявола">
+        </div>
+        <div class="wrap-text">
         <h3>Там есть Мост дьявола</h3>
         <p>- №2 -</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </span>
+        <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+        </div>
       </div>
-      <div class="wrap">
-        <span>
+      <ul class="intro-2">
+        <li>
         <h3>Небольшая площадь</h3>
         <p>- №3 -</p>
-        <p>Все достопримечательности находятся очень близко</p>
-        </span>
-        <span>
+        <p>Все достопримечательности<br> находятся очень близко</p>
+        </li>
+        <li>
         <h3>Красивая дорога</h3>
         <p>- №4 -</p>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </span>
-        <span>
+        <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+        </li>
+        <li>
         <h3>Мало туристов</h3>
         <p>- №5 -</p>
-        <p>Большинство едет в гранд каньон и толпится там</p>
-        </span>        
-      </div>
-      <div class="form title">
+        <p>Большинство едет в гранд каньон<br> и толпится там</p>
+        </li>        
+      </ul>
+      <div class="form-title">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button>ПОИСК ГОСТИНИЦЫ В седоне </button>
-        <form method="post" action="">
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="open-form">ПОИСК ГОСТИНИЦЫ В седоне </button>
+        <form class="search-form" method="post" action="">
           <p>
             <label>
             Дата заезда:
               <input class="date" name="date on" type="text" >
+              <button class="calendar"></button>
             </label>
           </p>
           <p>
             <label>Дата выезда:
               <input class="date" name="date off" type="text" >
+              <button class="calendar"></button>
             </label>
           </p>
           <label>Взрослые:
-            <button>-</button>
+            <button class="num">-</button>
             <input class="number" name="parents" type="text" >
-            <button>+</button>
+            <button class="num">+</button>
           </label>
           <label>Дети
-            <button>-</button>
+            <button class="num">-</button>
             <input class="namber" name="kids" type="text" >    
-            <button>+</button>
+            <button class="num">+</button>
           </label>
-          <button type="submit" class="search">Найти</button>
+          <p><button type="submit" class="search">Найти</button></p>
         </form>
       </div>
       <div class="map"><img class="map" src="https://via.placeholder.com/350x350" alt="карта"></div>
     </main>
     <footer>
-      <div class="info"><p>#visitSEDONA <br> <a>Тел: +7(495) 666-02-66</a></p></div>
-      <div class="social">
-        <a href=""><img src="img/twitter.svg" width="100px" alt="Twitter"></a>
-        <a href=""><img src="img/fb-icon.svg" width="100px" alt="Facebook"></a>
-        <a href=""><img src="img/youtube.svg" width="100px" alt="youtube"></a>
-      </div>
-      <div class="Academy">
-        <a href=""><img src="img/logo-htmlacademy.svg" width="100px" alt="Website by HTML academy"></a>
-      </div>
+      <div class="info"><p>#visitSEDONA <br> <a href="">Тел: +7(495) 666-02-66</a></p></div>
+      <ul class="social">
+        <li><a href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
+        <li><a href=""><img src="img/fb-icon.svg" alt="Facebook"></a></li>
+        <li><a href=""><img src="img/youtube.svg" alt="youtube"></a></li>
+      </ul>
+      <p>Website by</p>
+      <a class="academy" href=""><div></div></a>
     </footer>
   </body>
 </html>
