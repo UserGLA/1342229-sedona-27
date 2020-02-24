@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   
+  
   font-family: "PT Sans", Arial, sans-serif;
   
   font-size: 14px;
@@ -15,12 +16,19 @@ a {
   text-decoration: none;
   color: black;
 }
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+ }
 /*------------------------------------INDEX-------------------------------------*/
 
 /*------------------------------------HEADER-------------------------------------*/
 
 header{
   background-color: white;
+  margin: 0 auto;
+  height: 55px;
 }
 nav li{
   color: black;
@@ -35,27 +43,64 @@ nav a:focus{
 nav a:active{
   color: #cacaca;
 }
+nav ul{
+  padding: 0;
+  width: 1044px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+
+}
+nav div{
+  height: 55px;
+}
+.logo-img{
+  margin: 0 auto;
+  position: absolute;
+  margin-left: 550px;
+}
+.nav-left,
+.nav-right{
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 /*------------------------------------MAIN-------------------------------------*/
 
-
 section{
+  height: 725px;
   background-color: #d6e7f1;
-  background-image: url('../img/background-sedona.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-.polygon{
-  background-image: url('../img/polygon2.png');
-  background-position: bottom;
+  background-image: url('../img/background-sedona2.jpg');
+  background-position: top;
   background-repeat: no-repeat;
   text-align: center;
 }
-.polygon h2{
+section img{
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+.polygon{
+  background-image: url('../img/polygon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 57px;
+}
+.polygon-text{
+  background-color: white;
+  height: 215px;
+}
+.polygon-text h2{
+  margin: 0;
+  margin-bottom: 40px;
+  padding-top: 60px;
   color: black;
   line-height: 26px;
 }
+
 main{
   background-color: white;
 }
@@ -72,16 +117,54 @@ main{
 .wrap-text h3{
   color: white;
 }
-.intro{
+.wrap{
+  display: flex;
+  height: 255px;
+  margin-bottom: 60px;
+}
+.wrap-text{
+  width: 400px;
+  height: 255px;
+}
+.wrap-text h3{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.wrap-text p{
+  margin-bottom: 30px;
+}
+
+.intro{ 
+  margin: 0 auto;
+  width: 1060px;
+  justify-content: space-between;
   text-align: center;
+  display: flex;
+  padding: 0;
+}
+.intro-2{ 
+  margin: 0 auto;
+  margin-top: -60px;
+  width: 1200px;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  padding: 0;
+}
+.intro-2 li:first-child{
+  margin-left: 95px;
+}
+.intro-2 li:last-child{
+  margin-right: 75px;
 }
 .intro li{
-  display: inline-block;
   list-style: none;
+  margin-bottom: 76px;
 }
 .intro-2 li{
-  display: inline-block;
   list-style: none;
+  margin-top: 50px;
+  margin-bottom: 51px;
 }
 .icon-1-logo{
   width: 75px;
@@ -115,20 +198,29 @@ main{
 .form-title{
   text-align: center;
 }
+.form-title p{
+  margin: 0px;
+}
 .form-title h2{
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: bold;  
+  margin-top: 50px;
+  margin-bottom: 38px;
 }
+
 .form-title button{
   border: none;
 }
 .open-form{
+  width: 565px;
+  height: 85px;
   background-color: #766357;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   color: white;
+  margin-top: 60px;
 }
 .open-form:hover{
   background-color: #604e43;
@@ -136,6 +228,14 @@ main{
 .open-form:active{
   background-color: #503e33;
   color: #928a85;
+}
+
+.search-form{
+  width: 565px;
+  height: 395px;
+  background-color: white;
+  margin-left: 317px;
+  position: absolute;
 }
 .search-form label{
   font-weight: bold;
@@ -152,6 +252,24 @@ main{
 .search-form input:focus{
   outline-color: #e5e5e5; 
   background-color: white;
+}
+.date-on{
+  width: 345px;
+  height: 35px;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.date-off{
+  width: 345px;
+  height: 35px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.number{
+  width: 115px;
+  height: 35px;
+  margin-bottom: 55px;
 }
 .calendar{  
   background-image:url('../img/calendar.svg');
@@ -177,6 +295,8 @@ main{
   color: #81b3d2;
 }
 .search{
+  width: 455px;
+  height: 57px;
   background-color: #81b3d2;
   text-transform: uppercase;
   font-size: 21px;
@@ -190,17 +310,49 @@ main{
   background-color: #5496bd;
   color: #94b9d2;
 }
+.map{
+  width: 1200px;
+  height: 590px;
+  background-image: url('../img/map.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 /*------------------------------------FOOTER-------------------------------------*/
 footer{
+  width: 1200px;
+  height: 120px;
   background-color: #fefefe;
   opacity: 0.9;
   text-align: center;
+  display: flex;
+  margin-top: -120px;
+}
+.info{
+  margin: 35px 0;
+  margin-left: 125px;
+  margin-right: 180px;
+}
+.academy-site{
+  margin-right: 100px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
 }
 .info p{
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: black;
+  text-align: left;
+  margin: 0;
+}
+.social{
+  display: flex;
+  width: 150px;
+  height:120px;
+  justify-content: space-between;
+  align-items: center;
 }
 .social li{
   width: 46px;
@@ -218,12 +370,17 @@ footer{
 .social li:active a{
   opacity: 0.5;
 }
+.academy-site p{
+  padding-right: 10px;
+  margin-top: 5px;
+}
 .academy div{
   background-image: url('../img/logo-htmlacademy.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 120px;
   height: 40px;
+  margin-top: 10px;
 }
 .academy div:hover{
   background-image: url('../img/logo-htmlacademy-hover.png');
@@ -242,6 +399,14 @@ footer{
 /*------------------------------------CATALOG-------------------------------------*/
 
 /*------------------------------------MAIN-------------------------------------*/
+ .hotels-info h3{
+  margin: 0;
+}
+.container-2{
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid #e5e5e5;
+}
 fieldset{
   border: none;
 }
@@ -262,7 +427,7 @@ fieldset{
   background-position: center;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 320px; 
+  height: 215px; 
   color: white;
 }
 .btn-filter{
@@ -273,6 +438,58 @@ fieldset{
 .btn-filter:hover{
   background-color: white;
   color: black;
+}
+.filter form{
+  display: flex;
+  margin-left: 78px;
+}
+}
+form div{
+  display: flex;
+}
+fieldset, ul{
+  padding: 0;
+  margin: 0;
+}
+fieldset{
+  margin-top: 30px;
+}
+.checkbox fieldset{
+  width: 240px;
+  height: 185px;
+}
+.checkbox{
+  display: flex;
+}
+.checkbox ul{
+  height: 164px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sort{
+  width: 1122px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  margin-left: 78px;
+}
+.sort-head{
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+.sort-select{
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 490px;
+}
+
+.sort h3, p{
+  margin: 0;
+  padding: 0;
 }
 .sort a{
   color: #dadada;
@@ -293,6 +510,7 @@ fieldset{
   width: 11px;
   height: 10px;
   opacity: 0.5;
+  margin-right: 12px;
 }
 .arrow-2{
   background-image: url('../img/icon-down-dir.svg');
@@ -309,14 +527,58 @@ fieldset{
   opacity: 1;
 }
 .arrow-1:active{
-  background-image: url('../img/icon-up-dir-active.jpg')
+  background-image: url('../img/icon-up-dir-active.jpg');
   opacity: 1;
  }
 .arrow-2:active{
-  background-image: url('../img/icon-down-dir-active.jpg')
+  background-image: url('../img/icon-down-dir-active.jpg');
   opacity: 1;
 }
+
+
+.hotels{
+  margin-bottom: 120px;
+}
+.hotels .hotel-name{
+  margin-left: 78px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.hotels img{
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+}
+.hotels-info{
+  width: 260px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rang{
+  width: 110px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 510px;
+}
+.rang p{
+  background-color: #f2f2f2;
+  padding: 6px 13px;
+}
+.stars{
+  display: flex;
+  justify-content: flex-end;
+}
+.stars li{
+  border: none;
+}
 .detailed{
+  width: 110px;
+  height: 27px;
   border: none;
   background-color: #81b3d2;
   color: white;
@@ -333,6 +595,8 @@ fieldset{
   color: #94b9d2; 
 }
 .book{
+  width: 142px;
+  height: 27px;
   border: none;
   background-color: #766357;
   color: white; 
@@ -358,9 +622,7 @@ fieldset{
   white-space: nowrap;
   overflow: hidden;
 }
-.rang{
-  background-color: #f2f2f2;
-}
+
 
 
 

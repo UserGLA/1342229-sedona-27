@@ -8,25 +8,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <div class="container">
+      <header>
       <nav>
-        <a><img class="logo" src="img/logo-sedona.svg" width="100px" alt="Логотип"> </a>
+        <a class="logo-img"><img class="logo" src="img/logo-sedona.svg" width="138px" alt="Логотип"> </a>
         <ul>
-          <li><a a href="">Информация</a></li>
-          <li><a a href="">Фото и видео</a></li>
-          <li><a a href="">Карта штата</a></li>
-          <li><a a href="catalog.html">Гостиницы</a></li>
+          <div class="nav-left">
+            <li><a a href="">Информация</a></li>
+            <li><a a href="">Фото и видео</a></li>
+          </div>
+          <div class="nav-right">
+            <li><a a href="">Карта штата</a></li>
+            <li><a a href="catalog.html">Гостиницы</a></li>
+          </div>
         </ul>
       </nav>
-    </header>
-    <section>
-      <img class="welcome" src="img/intro-welcome.svg" width="550px" alt="Седона">
-      <div class="polygon">
-        <h2>Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </div>
-    </section>
-    <main>
+      </header>
+      <section>
+      <img class="welcome" src="img/intro-welcome.svg" width="458px" alt="Седона">
+      <div class="polygon"></div>
+        <div class="polygon-text">
+          <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+      <main>
       <div class="wrap">
         <div class="wrap-text">
             <h3>Настоящий городок</h3>
@@ -34,7 +40,7 @@
             <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
         </div>
         <div class="wrap-photo">
-          <img src="img/city.jpg" width="800px" height="256px" alt="Город">
+          <img src="img/city.jpg" width="800px" height="255px" alt="Город">
         </div>
       </div>
       <ul class="intro">
@@ -56,7 +62,7 @@
       </ul>
       <div class="wrap">
         <div class="wrap-photo">
-          <img src="img/bridge.jpg" width="800px" height="256px" alt="Мост дьявола">
+          <img src="img/bridge.jpg" width="800px" height="255px" alt="Мост дьявола">
         </div>
         <div class="wrap-text">
         <h3>Там есть Мост дьявола</h3>
@@ -66,17 +72,17 @@
       </div>
       <ul class="intro-2">
         <li>
-        <h3>Небольшая площадь</h3>
+        <h3>Небольшая<br> площадь</h3>
         <p>- №3 -</p>
         <p>Все достопримечательности<br> находятся очень близко</p>
         </li>
         <li>
-        <h3>Красивая дорога</h3>
+        <h3>Красивая<br> дорога</h3>
         <p>- №4 -</p>
         <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
         </li>
         <li>
-        <h3>Мало туристов</h3>
+        <h3>Мало<br> туристов</h3>
         <p>- №5 -</p>
         <p>Большинство едет в гранд каньон<br> и толпится там</p>
         </li>        
@@ -89,13 +95,13 @@
           <p>
             <label>
             Дата заезда:
-              <input class="date" name="date on" type="text" >
+              <input class="date-on" name="date on" type="text" >
               <button class="calendar"></button>
             </label>
           </p>
           <p>
             <label>Дата выезда:
-              <input class="date" name="date off" type="text" >
+              <input class="date-off" name="date off" type="text" >
               <button class="calendar"></button>
             </label>
           </p>
@@ -106,23 +112,29 @@
           </label>
           <label>Дети
             <button class="num">-</button>
-            <input class="namber" name="kids" type="text" >    
+            <input class="number" name="kids" type="text" >    
             <button class="num">+</button>
           </label>
           <p><button type="submit" class="search">Найти</button></p>
         </form>
       </div>
-      <div class="map"><img class="map" src="https://via.placeholder.com/350x350" alt="карта"></div>
-    </main>
-    <footer>
-      <div class="info"><p>#visitSEDONA <br> <a href="">Тел: +7(495) 666-02-66</a></p></div>
+      <div class="map"></div>
+      </main>
+      <footer>
+      <div class="info">
+        <p>#visitSEDONA <br> <a href="">Тел: +7(495) 666-02-66</a>
+        </p>
+      </div>
       <ul class="social">
         <li><a href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
         <li><a href=""><img src="img/fb-icon.svg" alt="Facebook"></a></li>
         <li><a href=""><img src="img/youtube.svg" alt="youtube"></a></li>
       </ul>
-      <p>Website by</p>
-      <a class="academy" href=""><div></div></a>
-    </footer>
+      <div class="academy-site">  
+        <p>Website by</p>
+        <a class="academy" href=""><div></div></a>
+      </div>  
+      </footer>
+    </div>
   </body>
 </html>
