@@ -9,18 +9,14 @@
   </head>
   <body class="catalog">
     <div class="container">
-      <header>
-      <nav>
-        <a class="logo-img"><img class="logo" src="img/logo-sedona.svg" width="138px" alt="Логотип"> </a>
+      <header class="header">
+      <nav class="main-nav">
+        <a class="logo-img" href="index.html"><img class="logo" src="img/logo-sedona.svg" width="138px" alt="Логотип"> </a>
         <ul>
-          <div class="nav-left">
             <li><a a href="">Информация</a></li>
             <li><a a href="">Фото и видео</a></li>
-          </div>
-          <div class="nav-right">
             <li><a a href="">Карта штата</a></li>
             <li><a a href="catalog.html">Гостиницы</a></li>
-          </div>
         </ul>
       </nav>
       </header>
@@ -30,7 +26,7 @@
         <div class="filter">
           <form class="filter-form" method="post" action=""> 
             <div class="checkbox">
-              <fieldset>
+              <fieldset class="filter-checkbox">
                 <legend>Инфраструктура</legend>
                 <ul>
                   <li><label><input type="checkbox" name="swimmingpool">Бассейн</label></li>
@@ -38,7 +34,7 @@
                   <li><label><input type="checkbox" name="WI-FI" >WI-FI</label></li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-checkbox">
                 <legend>Тип жилья</legend>
                 <ul>
                   <li><label><input type="checkbox" name="hotel" >Гостиница</label></li>
@@ -48,7 +44,7 @@
               </fieldset> 
             </div>
             <div>
-            <fieldset class="price">
+            <fieldset class="filter-text">
               <label>Стоимость в сутки (Р):
                 <input type="text" name="min price" placeholder="от 0">
                 <input type="text" name="max price" placeholder="до 3000">
@@ -142,7 +138,7 @@
       </ul>
     </main>
  
-      <footer>
+      <footer class="footer">
       <div class="info">
         <p>#visitSEDONA <br> <a href="">Тел: +7(495) 666-02-66</a>
         </p>

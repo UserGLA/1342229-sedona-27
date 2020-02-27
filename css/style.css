@@ -1,7 +1,9 @@
-body{
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+}
+body{
   
   font-family: "PT Sans", Arial, sans-serif;
   
@@ -25,86 +27,80 @@ a {
 
 /*------------------------------------HEADER-------------------------------------*/
 
-header{
+.header{
   background-color: white;
-  margin: 0 auto;
-  height: 55px;
 }
-nav li{
+.main-nav ul{
+  display: flex;  
+  padding: 15px 50px;
+}
+.main-nav li{
   color: black;
   line-height: 26px;
   list-style: none;
   font-weight: bold;
+  width: 20%;
 }
-nav a:hover,
-nav a:focus{
+.main-nav li:nth-child(3){
+  margin-left: auto;
+  text-align: right;
+}
+.main-nav li:nth-child(4){
+  text-align: right;
+}
+.main-nav a:hover,
+.main-nav a:focus{
   color: #81b3d2;
 }
-nav a:active{
+.main-nav a:active{
   color: #cacaca;
 }
-nav ul{
-  padding: 0;
-  width: 1044px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
 
-}
-nav div{
-  height: 55px;
-}
 .logo-img{
-  margin: 0 auto;
   position: absolute;
-  margin-left: 550px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.nav-left,
-.nav-right{
-  width: 330px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 
 /*------------------------------------MAIN-------------------------------------*/
 
 section{
-  height: 725px;
+  min-height: 510px;
   background-color: #d6e7f1;
   background-image: url('../img/background-sedona2.jpg');
   background-position: top;
   background-repeat: no-repeat;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 section img{
-  margin-top: 75px;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 30px;
+  width: 460px;
+  min-height: 460px;
 }
 .polygon{
   background-image: url('../img/polygon.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  height: 57px;
+  min-height: 57px;
+  margin-top: auto;
 }
 .polygon-text{
   background-color: white;
-  height: 215px;
+  min-height: 215px;
+  text-align: center;
 }
 .polygon-text h2{
-  margin: 0;
-  margin-bottom: 40px;
-  padding-top: 60px;
   color: black;
   line-height: 26px;
+  padding-top: 60px;
+  padding-bottom: 35px;  
 }
 
 main{
   background-color: white;
 }
- main h3{
+main h3{
   color: black;
   font-size: 21px;
   line-height: 21px;
@@ -119,53 +115,53 @@ main{
 }
 .wrap{
   display: flex;
-  height: 255px;
-  margin-bottom: 60px;
+  min-height: 255px;
 }
 .wrap-text{
   width: 400px;
-  height: 255px;
 }
 .wrap-text h3{
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 45px;
 }
 .wrap-text p{
-  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.wrap-photo img{
+  display: block;
 }
 
 .intro{ 
-  margin: 0 auto;
-  width: 1060px;
-  justify-content: space-between;
   text-align: center;
   display: flex;
-  padding: 0;
-}
-.intro-2{ 
-  margin: 0 auto;
-  margin-top: -60px;
-  width: 1200px;
   justify-content: space-between;
-  text-align: center;
-  display: flex;
-  padding: 0;
-}
-.intro-2 li:first-child{
-  margin-left: 95px;
-}
-.intro-2 li:last-child{
-  margin-right: 75px;
+  padding: 0 48px;
+  padding-top: 60px;
+  padding-bottom: 85px;
 }
 .intro li{
+  width: 26%;
   list-style: none;
-  margin-bottom: 76px;
+}
+.intro h3{
+  padding: 30px 0;
+}
+.intro-2{
+  background-color: #eeeeee;
+  text-align: center;
+  display: flex;
+  padding: 0 48px;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  justify-content: space-between;
+}
+.intro-2 p{
+  padding-top: 20px;
 }
 .intro-2 li{
   list-style: none;
-  margin-top: 50px;
-  margin-bottom: 51px;
+    width: 26%;
 }
+/*
 .icon-1-logo{
   width: 75px;
   height: 75px;
@@ -190,10 +186,7 @@ main{
   background-repeat: no-repeat;
   margin: 0 auto;
 }
-.intro-2{
-  background-color: #eeeeee;
-  text-align: center;
-}
+*/
 /*------------------------------------FORM-------------------------------------*/
 .form-title{
   text-align: center;
@@ -319,25 +312,28 @@ main{
   margin: 0 auto;
 }
 /*------------------------------------FOOTER-------------------------------------*/
-footer{
-  width: 1200px;
-  height: 120px;
+.footer{
+  min-height: 120px;
   background-color: #fefefe;
   opacity: 0.9;
   text-align: center;
   display: flex;
   margin-top: -120px;
+  padding: 0 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 .info{
-  margin: 35px 0;
-  margin-left: 125px;
-  margin-right: 180px;
+  padding-left: 25px;
+  width: 26%
 }
 .academy-site{
-  margin-right: 100px;
   display: flex;
-  margin: 0 auto;
   align-items: center;
+  width: 26%;
+}
+.academy-site p{
+  padding-right: 5px;
 }
 .info p{
   font-size: 21px;
@@ -350,7 +346,6 @@ footer{
 .social{
   display: flex;
   width: 150px;
-  height:120px;
   justify-content: space-between;
   align-items: center;
 }
@@ -369,10 +364,6 @@ footer{
 }
 .social li:active a{
   opacity: 0.5;
-}
-.academy-site p{
-  padding-right: 10px;
-  margin-top: 5px;
 }
 .academy div{
   background-image: url('../img/logo-htmlacademy.svg');
@@ -399,9 +390,6 @@ footer{
 /*------------------------------------CATALOG-------------------------------------*/
 
 /*------------------------------------MAIN-------------------------------------*/
- .hotels-info h3{
-  margin: 0;
-}
 .container-2{
   width: 1200px;
   margin: 0 auto;
@@ -410,7 +398,15 @@ footer{
 fieldset{
   border: none;
 }
-.catalog input{
+fieldset, ul{
+  padding: 0;
+  margin: 0;
+}
+.checkbox legend{
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+.filter input{
   border: 2px solid white;
   background-color: transparent;
 }
@@ -427,7 +423,6 @@ fieldset{
   background-position: center;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 215px; 
   color: white;
 }
 .btn-filter{
@@ -441,52 +436,41 @@ fieldset{
 }
 .filter form{
   display: flex;
-  margin-left: 78px;
-}
+  padding: 30px 73px;
 }
 form div{
   display: flex;
 }
-fieldset, ul{
-  padding: 0;
-  margin: 0;
-}
-fieldset{
-  margin-top: 30px;
-}
 .checkbox fieldset{
   width: 240px;
-  height: 185px;
+
 }
 .checkbox{
   display: flex;
 }
 .checkbox ul{
-  height: 164px;
+  min-height: 110px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .sort{
-  width: 1122px;
-  height: 86px;
   display: flex;
   align-items: center;
-  margin-left: 78px;
+  padding: 35px 73px;
 }
 .sort-head{
   width: 240px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: 40px;
 }
 .sort-select{
   width: 240px;
   display: flex;
   justify-content: space-between;
-  margin-right: 490px;
 }
-
 .sort h3, p{
   margin: 0;
   padding: 0;
@@ -511,6 +495,7 @@ fieldset{
   height: 10px;
   opacity: 0.5;
   margin-right: 12px;
+  margin-left: auto;
 }
 .arrow-2{
   background-image: url('../img/icon-down-dir.svg');
@@ -534,16 +519,13 @@ fieldset{
   background-image: url('../img/icon-down-dir-active.jpg');
   opacity: 1;
 }
-
-
 .hotels{
   margin-bottom: 120px;
 }
-.hotels .hotel-name{
-  margin-left: 78px;
-  height: 150px;
+.hotel-name{
   display: flex;
   align-items: center;
+  padding: 30px 73px;
 }
 .hotels img{
   width: 135px;
@@ -552,22 +534,22 @@ fieldset{
 }
 .hotels-info{
   width: 260px;
-  height: 90px;
+  min-height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .rang{
   width: 110px;
-  height: 90px;
+  min-height: 90px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 510px;
+  margin-left: auto;
 }
 .rang p{
   background-color: #f2f2f2;
-  padding: 6px 13px;
+  padding: 3px 13px;
 }
 .stars{
   display: flex;
