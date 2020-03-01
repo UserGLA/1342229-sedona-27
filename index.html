@@ -13,10 +13,10 @@
       <nav class="main-nav">
         <a class="logo-img" href="index.html"><img class="logo" src="img/logo-sedona.svg" width="138px" alt="Логотип"> </a>
         <ul>
-            <li><a a href="">Информация</a></li>
-            <li><a a href="">Фото и видео</a></li>
-            <li><a a href="">Карта штата</a></li>
-            <li><a a href="catalog.html">Гостиницы</a></li>
+            <li><a href="">Информация</a></li>
+            <li><a href="">Фото и видео</a></li>
+            <li><a href="">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
       </header>
@@ -88,30 +88,36 @@
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="open-form">ПОИСК ГОСТИНИЦЫ В седоне </button>
         <form class="search-form" method="post" action="">
-          <p>
-            <label>
-            Дата заезда:
-              <input class="date-on" name="date on" type="text" >
-              <button class="calendar"></button>
-            </label>
-          </p>
-          <p>
-            <label>Дата выезда:
-              <input class="date-off" name="date off" type="text" >
-              <button class="calendar"></button>
-            </label>
-          </p>
-          <label>Взрослые:
-            <button class="num">-</button>
-            <input class="number" name="parents" type="text" >
-            <button class="num">+</button>
-          </label>
-          <label>Дети
-            <button class="num">-</button>
-            <input class="number" name="kids" type="text" >    
-            <button class="num">+</button>
-          </label>
-          <p><button type="submit" class="search">Найти</button></p>
+          <ul>
+            <li>
+              <label>Дата заезда:
+                <input class="date-on" name="date on" type="text">
+                <button class="calendar calendar-on"></button>
+              </label>
+            </li>
+            <li>
+              <label>Дата выезда:
+                <input class="date-off" name="date off" type="text">
+                <button class="calendar calendar-off"></button>
+              </label>
+            </li>
+            <li>
+              <label class="parents">Взрослые:
+                <button class="num num-down"></button>
+                <input class="number number-parents" name="parents" type="text" >
+                <button class="num num-up"></button>
+              </label>
+            
+              <label class="kids">Дети:
+                <button class="num num-kids-down"></button>
+                <input class="number number-kids" name="kids" type="text" >    
+                <button class="num num-kids-up"></button>
+              </label>
+            </li>
+            <li>
+              <p class="search-btn"><button type="submit" class="search">Найти</button></p>
+            </li>
+          </ul>
         </form>
       </div>
       <div class="map"></div>

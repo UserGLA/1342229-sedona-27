@@ -13,10 +13,10 @@
       <nav class="main-nav">
         <a class="logo-img" href="index.html"><img class="logo" src="img/logo-sedona.svg" width="138px" alt="Логотип"> </a>
         <ul>
-          <li><a a href="">Информация</a></li>
-          <li><a a href="">Фото и видео</a></li>
-          <li><a a href="">Карта штата</a></li>
-          <li><a a href="catalog.html">Гостиницы</a></li>
+          <li><a href="">Информация</a></li>
+          <li><a href="">Фото и видео</a></li>
+          <li><a href="">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
       </header>
@@ -28,29 +28,64 @@
                 <fieldset class="filter-checkbox">
                 <legend>Инфраструктура</legend>
                 <ul>
-                  <li><label><input type="checkbox" name="swimmingpool">Бассейн</label></li>
-                  <li><label><input type="checkbox" name="parking" >Парковка</label></li>
-                  <li><label><input type="checkbox" name="WI-FI" >WI-FI</label></li>
+                  <li>
+                    <label class="check">
+                      <input class="check-input visually-hidden" type="checkbox" name="swimmingpool">
+                      <span class="check-box"></span>
+                      Бассейн
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check">
+                      <input class="check-input visually-hidden" type="checkbox" name="parking"><span class="check-box"></span>Парковка
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check">
+                      <input class="check-input visually-hidden" type="checkbox" name="WI-FI"><span class="check-box"></span>WI-FI
+                    </label>
+                  </li>
                 </ul>
                 </fieldset>
                 <fieldset class="filter-checkbox">
                 <legend>Тип жилья</legend>
                 <ul>
-                  <li><label><input type="checkbox" name="hotel" >Гостиница</label></li>
-                  <li><label><input type="checkbox" name="motel" >Мотель</label></li>
-                  <li><label><input type="checkbox" name="appartaments">Аппартаменты</label></li>
+                  <li>
+                    <label class="check">
+                      <input class="check-input visually-hidden" type="checkbox" name="hotel">
+                      <span class="check-box"></span>Гостиница
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check">
+                      <input class="check-input visually-hidden" type="checkbox" name="motel">
+                      <span class="check-box"></span>Мотель
+                    </label>
+                  </li>
+                  <li>
+                    <label class="check">
+                      <input class="check-input visually-hidden" type="checkbox" name="appartaments"><span class="check-box">
+                      </span>Аппартаменты
+                    </label>
+                  </li>
                 </ul>
               </fieldset> 
-            </div>
-            <div>
-            <fieldset class="filter-text">
-              <label>Стоимость в сутки (Р):
-                <input type="text" name="min price" placeholder="от 0">
-                <input type="text" name="max price" placeholder="до 3000">
-                <button class="btn-filter" type="submit">Показать</button>
-              </label>
-            </fieldset>
-            </div>
+            </div>           
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (Р):</div>
+              <div class="price-controls">
+                <label class="min-price"><input type="number" name="min price" value="0"></label>
+                <label class="max-price"><input type="number" name="max price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>              
+              </div>
+              <button class="btn-filter" type="submit">Показать</button> 
+            </div>           
           </form>
         </div>
         <div class="container-2">
@@ -64,7 +99,6 @@
             <a href="">По типу</a>
             <a href="">По рейтингу</a>
           </div>
-           <!--Стрелочки -->  
           <div class="arrow-1"><a href=""></a></div>
           <div class="arrow-2"><a href=""></a></div>
         </div>
