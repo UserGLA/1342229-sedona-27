@@ -22,6 +22,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   background-color: white;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.1);
  }
 .visually-hidden{
   position: absolute;
@@ -42,20 +43,23 @@ a {
 }
 .main-nav ul{
   display: flex;  
-  padding: 15px 50px;
+  padding: 15px 72px;
 }
 .main-nav li{
   color: black;
   line-height: 26px;
   list-style: none;
   font-weight: bold;
-  width: 20%;
+  width: 23%;
 }
-.main-nav li:nth-child(3){
+.main-nav li:nth-child(1){
+  width: 0px;
+}
+.main-nav li:nth-child(4){
   margin-left: auto;
   text-align: right;
 }
-.main-nav li:nth-child(4){
+.main-nav li:nth-child(5){
   text-align: right;
 }
 .main-nav a:hover,
@@ -68,6 +72,7 @@ a {
 
 .logo-img{
   position: absolute;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -75,7 +80,7 @@ a {
 /*------------------------------------MAIN-------------------------------------*/
 
 section{
-  min-height: 510px;
+  min-height: 507px;
   background-color: #d6e7f1;
   background-image: url('../img/background-sedona2.jpg');
   background-position: top;
@@ -85,26 +90,26 @@ section{
 }
 section img{
   margin: 0 auto;
-  padding-top: 75px;
-  padding-bottom: 30px;
+  padding-top: 53px;
   width: 460px;
-  min-height: 460px;
+  min-height: 450px;
 }
 .polygon{
   background-image: url('../img/polygon.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
   min-height: 57px;
-  margin-top: auto;
 }
 .polygon-text{
   background-color: white;
-  min-height: 215px;
+  min-height: 218px;
   text-align: center;
 }
 .polygon-text h2{
   color: black;
   line-height: 26px;
-  padding-top: 60px;
-  padding-bottom: 35px;  
+  padding-top: 61px;
+  padding-bottom: 30px;  
 }
 
 main{
@@ -122,6 +127,8 @@ main h3{
 }
 .wrap-text h3{
   color: white;
+  padding-top: 45px;
+  padding-bottom: 3px;
 }
 .wrap{
   display: flex;
@@ -130,11 +137,8 @@ main h3{
 .wrap-text{
   width: 400px;
 }
-.wrap-text h3{
-  padding-top: 45px;
-}
 .wrap-text p{
-  padding-top: 30px;
+  padding-top: 22px;
 }
 .wrap-photo img{
   display: block;
@@ -144,33 +148,14 @@ main h3{
   text-align: center;
   display: flex;
   justify-content: space-between;
-  padding-top: 52px;
-  padding-bottom: 85px;
+  padding-top: 60px;
+  padding-bottom: 82px;
 }
 .intro li{
   width: 33.3333%;
   list-style: none;
   padding-top: 100px;
   position: relative;
-}
-.intro h3{
-  padding-bottom: 30px;
-}
-.intro-2{
-  background-color: #eeeeee;
-  text-align: center;
-  display: flex;
-  padding: 0 52px;
-  padding-top: 50px;
-  padding-bottom: 65px;
-  justify-content: space-between;
-}
-.intro-2 p{
-  padding-top: 20px;
-}
-.intro-2 li{
-  list-style: none;
-    width: 26%;
 }
 .intro li::before{
   position: absolute;
@@ -198,6 +183,26 @@ main h3{
   height: 76px;
   top: -4px;
 }
+.intro h3, 
+.intro-2 h3 {
+  padding-bottom: 25px;
+}
+.intro-2{
+  background-color: #eeeeee;
+  text-align: center;
+  display: flex;
+  padding: 0 58px;
+  padding-top: 48px;
+  padding-bottom: 60px;
+  justify-content: space-between;
+}
+.intro-2 li{
+  list-style: none;
+  width: 26%;
+}
+.Advantages-num{
+  padding-bottom: 20px;
+}
 
 
 /*------------------------------------FORM-------------------------------------*/
@@ -209,7 +214,10 @@ main h3{
   line-height: 36px;
   font-weight: bold;  
   margin-top: 50px;
-  margin-bottom: 38px;
+  margin-bottom: 23px;
+}
+.form-title p{
+  line-height: 24px;
 }
 .form-title button{
   border: none;
@@ -222,7 +230,7 @@ main h3{
   font-size: 21px;
   line-height: 26px;
   color: white;
-  margin-top: 60px;
+  margin-top: 47px;
 }
 .open-form:hover{
   background-color: #604e43;
@@ -241,6 +249,7 @@ main h3{
 }
 .search-form label{
   font-weight: bold;
+  line-height: 26px;
 }
 .search-form input{
   background-color: #f2f2f2;
@@ -301,62 +310,57 @@ main h3{
   background-image: url('../img/Calendar-active.png');
 }
 .number{
-  width: 115px;
+  width: 63px;
   height: 38px;
   text-align: center;
 }
 .number-kids{
-  margin-left: 24px;
+  margin-left: 50px;
 }
 .number-parents{
-  margin-left: 36px;
+  margin-left: 62px;
 }
 .search-form li:nth-child(3){
   display: flex;
   width: 100%;
-  justify-content: space-between;
   position: relative;
 }
 .num{
-  background-color: transparent;
+  background-color: #f2f2f2;
   position: absolute;
-  opacity: 0.5;
+  width: 27px;
+  height: 38px;
 }
 .num-down{
-  width: 11px;
-  height: 38px;
   background-image: url('../img/minus.png');
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
-  left: 120px;
+  left: 112px;
 }
-.num-up{
-  width: 11px;
-  height: 38px;
+.num-up{  
   background-image: url('../img/plus.png');
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
-  left: 205px;
+  left: 200px;
   top: 0px;
+}
+.kids{
+  margin-left: 78px;
 }
 
 .num-kids-down{
-  width: 11px;
-  height: 38px;
   background-image: url('../img/minus.png');
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
-  left: 350px;
+  left: 342px;
   top: 0px;
 }
 .num-kids-up{
-  width: 11px;
-  height: 38px;
   background-image: url('../img/plus.png');
   background-position: center;
   background-repeat: no-repeat;
   top: 0px;
-  left: 433px;
+  left: 427px;
 }
 .num:hover{
   opacity: 1;
@@ -374,7 +378,7 @@ main h3{
   background-image: url('../img/plus-active.png');
 }
 .search-btn{
-  margin-top: 25px;
+  margin-top: 24px;
 }
 .search{
   width: 458px;
@@ -402,27 +406,29 @@ main h3{
 }
 /*------------------------------------FOOTER-------------------------------------*/
 .footer{
-  min-height: 120px;
+  min-height: 116px;
   background-color: #fefefe;
   opacity: 0.9;
   text-align: center;
   display: flex;
-  margin-top: -120px;
-  padding: 0 100px;
+  margin-top: -116px;
+  padding: 0 92px;
+  padding-top: 31px;
   justify-content: space-between;
-  align-items: center;
+
 }
 .info{
-  padding-left: 25px;
+  padding-left: 32px;
   width: 26%
 }
 .academy-site{
   display: flex;
-  align-items: center;
-  width: 26%;
+  width: 20%;
+  margin-left: 60px;
 }
 .academy-site p{
-  padding-right: 5px;
+  padding-right: 6px;
+  padding-top: 18px;
 }
 .info p{
   font-size: 21px;
@@ -431,12 +437,13 @@ main h3{
   color: black;
   text-align: left;
   margin: 0;
+  padding-bottom: 5px;  
 }
 .social{
   display: flex;
   width: 150px;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 5px;
 }
 .social li{
   width: 46px;
@@ -444,6 +451,9 @@ main h3{
   background-color: #81b3d2;
   list-style: none;
   line-height: 55px;
+}
+.social li:nth-child(2){
+  padding-top: 2px;
 }
 .social li:hover{
   background-color: #669ec0;
@@ -458,23 +468,15 @@ main h3{
   background-image: url('../img/logo-htmlacademy.svg');
   background-position: center;
   background-repeat: no-repeat;
-  width: 120px;
-  height: 40px;
+  width: 117px;
+  height: 39px;
   margin-top: 10px;
 }
 .academy div:hover{
   background-image: url('../img/logo-htmlacademy-hover.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 40px; 
 }
 .academy div:active{
   background-image: url('../img/logo-htmlacademy-active.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 120px;
-  height: 40px; 
 }
 /*------------------------------------CATALOG-------------------------------------*/
 
@@ -482,7 +484,7 @@ main h3{
 .container-2{
   width: 1200px;
   margin: 0 auto;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 fieldset{
   border: none;
@@ -493,7 +495,8 @@ fieldset, ul{
 }
 .checkbox legend{
   font-weight: bold;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
+  font-size: 16px;
 }
 .catalog li{
   list-style: none;
@@ -512,19 +515,17 @@ fieldset, ul{
 }
 .filter form{
   display: flex;
-  padding: 30px 73px;
+  padding: 27px 72px;
+  padding-bottom: 32px;
 }
 .checkbox fieldset{
-  width: 240px;
-}
-.checkbox legend{
-  font-size: 16px;
+  width: 256px;
 }
 .checkbox{
   display: flex;
 }
 .checkbox ul{
-  min-height: 110px;
+  min-height: 112px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -592,18 +593,22 @@ fieldset, ul{
 }
 .price-controls label{
   display: inline-block;
+  height: 7px;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 21px;
+  vertical-align: middle;
   cursor: pointer;
 }
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 158px;
-  padding-left: 65px;
+  width: 156px;
+  padding-left: 54px;
+}
+.price-controls .min-price{
+  padding-left: 60px;
 }
 .price-controls input {
-  width: 50px;
+  width: 60px;
   margin: 0;
 
   color: inherit;
@@ -652,7 +657,7 @@ fieldset, ul{
 }
 .btn-filter {
   display: block;
-  margin: 0 auto;
+  margin-left: 26%;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -668,7 +673,8 @@ fieldset, ul{
 .sort{
   display: flex;
   align-items: center;
-  padding: 35px 73px;
+  padding: 32px 72px;
+  padding-bottom: 28px;
 }
 .sort-head{
   width: 240px;
@@ -677,8 +683,16 @@ fieldset, ul{
   align-items: center;
   margin-right: 40px;
 }
+.sort p{ 
+  font-size: 12px;
+  line-height: 18px;
+}
+.sort a{
+  font-size: 12px;
+  line-height: 18px;
+}
 .sort-select{
-  width: 240px;
+  width: 237px;
   display: flex;
   justify-content: space-between;
 }
@@ -793,6 +807,7 @@ fieldset, ul{
   background-color: #81b3d2;
   color: white;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .detailed:hover{
   border: none;
@@ -811,6 +826,7 @@ fieldset, ul{
   background-color: #766357;
   color: white; 
   text-transform: uppercase;
+  font-weight: bold;
 }
 .book:hover{
   border: none;
