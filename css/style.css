@@ -776,8 +776,20 @@ fieldset, ul{
   flex-direction: column;
   justify-content: space-between;
 }
+.hotels-info h3{
+  line-height: 15px;
+}
+.hotels-info p{
+  display: flex;
+  width: 100%;
+}
+.hotels-info span{
+  margin-left: auto;
+  margin-right: 80px;
+}
 .btn{
   display: flex;
+  width: 99%;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -791,14 +803,12 @@ fieldset, ul{
 }
 .rang p{
   background-color: #f2f2f2;
-  padding: 3px 13px;
+  padding-bottom: 3px;
+  padding-left: 16px;
 }
 .stars{
   display: flex;
   justify-content: flex-end;
-}
-.stars li{
-  border: none;
 }
 .detailed{
   width: 110px;
@@ -840,13 +850,14 @@ fieldset, ul{
 }
 .stars li{
   background-image: url('../img/star.svg');
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  width: 18px;
+  width: 22px;
   height: auto;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+  border: none;
 }
 
 
