@@ -730,6 +730,16 @@ fieldset, ul{
   height: 10px;
   opacity: 0.5;
 }
+.sort .arrow-1,
+.sort .arrow-2 {
+  border: none;
+}
+.sort .arrow-1:hover{
+  border: none;
+}
+.sort .arrow-2:hover {
+  border: none;
+}
 .arrow-1:hover{
   opacity: 1;
 }
@@ -742,20 +752,8 @@ fieldset, ul{
  }
 .arrow-2:active{
   background-image: url('../img/icon-down-dir-active.jpg');
-  opacity: 1;
-  
-  
-  
-  
-}.arrow-1:focus{
-  
- }
-.arrow-2:focus{
-
+  opacity: 1;  
 }
-
-
-
 .hotels{
   margin-bottom: 120px;
 }
