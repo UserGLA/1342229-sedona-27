@@ -39,6 +39,7 @@ a {
 /*------------------------------------HEADER-------------------------------------*/
 
 .header{
+  position: relative;
   background-color: white;
 }
 .main-nav ul{
@@ -312,9 +313,9 @@ main h3{
   background-image: url('../img/Calendar-active.png');
 }
 .number{
-  width: 63px;
+  width: 38px;
   height: 38px;
-  padding-left: 27px;
+  padding-left: 15px;
 }
 .search-form li:nth-child(3){
   display: flex;
@@ -327,31 +328,25 @@ main h3{
 }
 .num{
   background-color: #f2f2f2;
-  width: 27px;
+  width: 38px;
   height: 38px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .num-down{
   background-image: url('../img/minus.png');
-  background-position: right;
-  background-repeat: no-repeat;
-  margin-left: 38px;
+  margin-left: 40px;
 }
 .num-up{  
   background-image: url('../img/plus.png');
-  background-position: left;
-  background-repeat: no-repeat;
-  margin-right: 52px;
+  margin-right: 54px;
 }
 .num-kids-down{
   background-image: url('../img/minus.png');
-  background-position: right;
-  background-repeat: no-repeat;
   margin-left: 26px;
 }
 .num-kids-up{
   background-image: url('../img/plus.png');
-  background-position: left;
-  background-repeat: no-repeat;
 }
 .num:hover{
   background-color: #ebebeb;
