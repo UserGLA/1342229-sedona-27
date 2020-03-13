@@ -86,7 +86,7 @@
       <div class="form-title">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="open-form">ПОИСК ГОСТИНИЦЫ В седоне </button>
+        <button class="open-form">ПОИСК ГОСТИНИЦЫ В седоне</button>
         <form class="search-form" method="post" action="">
           <ul>
             <li>
@@ -97,19 +97,19 @@
             </li>
             <li>
               <label>Дата выезда:
-                <input class="date-off" name="date off" type="text">
+                <input class="date-off" name="date off" type="text" >
               </label>
                 <button type="button" class="calendar calendar-off"></button>
             </li>
             <li>
               <label class="parents">Взрослые:
                 <button type="button" class="num num-down"></button>
-                <input class="number number-parents" name="parents" type="text" >
+                <input class="number number-parents" name="parents" type="text">
                 <button type="button" class="num num-up"></button>
               </label>      
               <label class="kids">Дети:
                 <button type="button" class="num num-kids-down"></button>  
-                <input class="number number-kids" name="kids" type="text" >
+                <input class="number number-kids" name="kids" type="text">
                 <button type="button" class="num num-kids-up"></button>
               </label>
             </li>
@@ -119,7 +119,10 @@
           </ul>
         </form>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CKqYf0ma" width="1200" height="585" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <img src="img/map.jpg" width="1200" height="585">
+        </div>     
       </main>
       <footer class="footer">
       <div class="info">
@@ -137,5 +140,6 @@
       </div>  
       </footer>
     </div>
+  <script src="js/popup.js"></script>
   </body>
 </html>
