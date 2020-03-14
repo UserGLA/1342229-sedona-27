@@ -247,10 +247,11 @@ main h3{
   width: 568px;
   height: 395px;
   background-color: white;
-  margin-left: 317px;
+  margin-left: 316px;
   position: absolute;
   padding: 55px;
   display: none;
+  box-shadow: 0px 4px 6px 0px rgba(156,156,156,1);
 }
 @keyframes bounce {
   0% {
