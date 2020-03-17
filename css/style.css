@@ -51,9 +51,10 @@ a {
   line-height: 26px;
   list-style: none;
   font-weight: bold;
-  width: 25%;
+  width: 23%;
 }
 .main-nav li:nth-child(3){
+  margin-left: auto;
   text-align: end;
 }
 .main-nav li:nth-child(4){
@@ -218,20 +219,20 @@ main h3{
 }
 .form-title p{
   line-height: 24px;
+  margin-bottom: 77px;
 }
 .form-title button{
   border: none;
 }
 .open-form{
-  width: 568px;
-  height: 85px;
+  padding: 28px 139px;
   background-color: #766357;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: white;
-  margin-top: 47px;
+  cursor: pointer;
 }
 .open-form:hover{
   background-color: #604e43;
@@ -243,6 +244,7 @@ main h3{
 .search-form{
   width: 568px;
   height: 395px;
+  top: 239px;
   background-color: white;
   margin-left: 316px;
   position: absolute;
@@ -311,6 +313,10 @@ main h3{
 }
 .search-form li{
   list-style: none;
+  padding-bottom: 30px;
+}
+.search-form li:last-child p{
+  margin-bottom: 0px;
 }
 .search-form input:hover{
   background-color: #ebebeb;
@@ -438,6 +444,7 @@ main h3{
 }
 .map{
   position: relative;
+  margin-top: 28px;
 }
 .map iframe{
   position: relative;
@@ -572,9 +579,12 @@ fieldset, ul{
 }
 .checkbox ul{
   min-height: 112px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+.checkbox li{
+  padding-bottom: 25px;
+}
+.checkbox li:last-child{
+  padding-bottom: 0px;
 }
 .check-input{
   position: absolute;
@@ -815,15 +825,12 @@ fieldset, ul{
 }
 .hotels-info{
   width: 260px;
-  min-height: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .hotels-info h3{
   line-height: 15px;
 }
 .hotels-info p{
+  padding: 13px 0px;
   display: flex;
   width: 100%;
 }
@@ -839,10 +846,6 @@ fieldset, ul{
 }
 .rang{
   width: 110px;
-  min-height: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-left: auto;
 }
 .rang p{
@@ -853,6 +856,7 @@ fieldset, ul{
 .stars{
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 45px;
 }
 .detailed{
   width: 110px;
