@@ -5,7 +5,7 @@
 }
 body{
   
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   
   font-size: 14px;
   line-height: 21px;
@@ -51,18 +51,15 @@ a {
   line-height: 26px;
   list-style: none;
   font-weight: bold;
-  width: 23%;
+  width: 25%;
 }
-.main-nav li:nth-child(1){
-  width: 0px;
+.main-nav li:nth-child(3){
+  text-align: end;
 }
 .main-nav li:nth-child(4){
-  margin-left: auto;
-  text-align: right;
+  text-align: end;
 }
-.main-nav li:nth-child(5){
-  text-align: right;
-}
+
 .main-nav a:hover,
 .main-nav a:focus{
   color: #81b3d2;

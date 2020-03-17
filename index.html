@@ -10,9 +10,9 @@
   <body>
     <div class="container">
       <header class="header">
+        <div><a class="logo-img" href=""><img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="Логотип"> </a></div>
       <nav class="main-nav">
         <ul>
-         <li><a class="logo-img" href="index.html"><img class="logo" src="img/logo-sedona.svg" alt="Логотип"> </a></li>      
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
@@ -22,7 +22,7 @@
       </header>
       <main>
       <section>
-      <img class="welcome" src="img/intro-welcome.svg" alt="Седона">
+      <img class="welcome" src="img/intro-welcome.svg" width="458" height="352" alt="Седона">
       <div class="polygon"></div>
       </section>
       <div class="polygon-text">
@@ -36,7 +36,7 @@
             <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
         </div>
         <div class="wrap-photo">
-          <img src="img/city2.jpg" alt="Город">
+          <img src="img/city2.jpg" width="800" height="255" alt="Город">
         </div>
       </div>
       <ul class="intro">
@@ -58,7 +58,7 @@
       </ul>
       <div class="wrap">
         <div class="wrap-photo">
-          <img src="img/bridge2.jpg" alt="Мост дьявола">
+          <img src="img/bridge2.jpg" width="800" height="255" alt="Мост дьявола">
         </div>
         <div class="wrap-text">
         <h3>Там есть<br> Мост дьявола</h3>
@@ -87,31 +87,30 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="open-form">ПОИСК ГОСТИНИЦЫ В седоне</button>
-        <form class="search-form" method="post" action="">
+        <form class="search-form" method="post">
           <ul>
             <li>
               <label>Дата заезда:
                 <input class="date-on" name="date on" type="text" placeholder="24 АПРЕЛЯ 2017">
               </label>
-                <button type="button" class="calendar calendar-on"></button>         
+                <button type="button" aria-label="календарь" class="calendar calendar-on"></button>         
             </li>
             <li>
               <label>Дата выезда:
                 <input class="date-off" name="date off" type="text" placeholder="4 ИЮЛЯ 2017">
               </label>
-                <button type="button" class="calendar calendar-off"></button>
+                <button type="button" aria-label="календарь" class="calendar calendar-off"></button>
             </li>
             <li>
-              <label class="parents">Взрослые:
-                <button type="button" class="num num-down"></button>
-                <input class="number number-parents" name="parents" type="text" placeholder="2">
-              </label> 
-              <button type="button" class="num num-up"></button>
-              <label class="kids">Дети:
-                <button type="button" class="num num-kids-down"></button>  
-                <input class="number number-kids" name="kids" type="text" placeholder="0">
-              </label>
-              <button type="button" class="num num-kids-up"></button>
+              
+              <label for="number-parents" class="parents">Взрослые:</label> 
+                <button type="button" aria-label="уменьшить количество" class="num num-down"></button>
+                <input class="number number-parents" id="number-parents" name="parents" type="text" placeholder="2">        
+              <button type="button" aria-label="увеличить количество" class="num num-up"></button>
+              <label for="number-kids" class="kids">Дети:</label>
+                <button type="button" aria-label="уменьшить количество" class="num num-kids-down"></button>  
+                <input class="number number-kids" id="number-kids" name="kids" type="text" placeholder="0">           
+              <button type="button" aria-label="увеличить количество" class="num num-kids-up"></button>
             </li>
             <li>
               <p class="search-btn"><button type="submit" class="search">Найти</button></p>
@@ -120,23 +119,23 @@
         </form>
       </div>
       <div class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CKqYf0ma" width="1200" height="585" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-        <img src="img/map.jpg" width="1200" height="585">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CKqYf0ma" width="1200" height="585"   style="position:relative;"></iframe>
+        <img src="img/map.jpg" width="1200" height="585" alt="Карта">
         </div>     
       </main>
       <footer class="footer">
       <div class="info">
         <p>#visitSEDONA</p> 
-        <p><a href="">Тел: +7(495) 666-02-66</a></p>
+        <p><a href="tel:+74956660266">Тел: +7(495) 666-02-66</a></p>
       </div>
       <ul class="social">
-        <li><a href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
-        <li><a href=""><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-        <li><a href=""><img src="img/youtube.svg" alt="youtube"></a></li>
+        <li><a href=""><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+        <li><a href=""><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+        <li><a href=""><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a></li>
       </ul>
       <div class="academy-site">  
         <p>Website by</p>
-        <a class="academy" href=""><div></div></a>
+        <a class="academy" href="https://htmlacademy.ru/intensive/htmlcss"><div></div></a>
       </div>  
       </footer>
     </div>

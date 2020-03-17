@@ -10,9 +10,9 @@
   <body class="catalog">
     <div class="container">
       <header class="header">
+        <div><a class="logo-img" href="index.html"><img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="Логотип"> </a></div>
       <nav class="main-nav">
         <ul>
-         <li><a class="logo-img" href="index.html"><img class="logo" src="img/logo-sedona.svg" width="138" alt="Логотип"> </a></li>      
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
@@ -29,20 +29,20 @@
                 <legend>Инфраструктура:</legend>
                 <ul>
                   <li>
-                    <label class="check">
+                    <label class="check"> 
                       <input class="check-input visually-hidden" type="checkbox" name="swimmingpool">
-                      <span class="check-box"></span>
+                      <span class="check-box" aria-label="бассейн"></span>
                       Бассейн
                     </label>
                   </li>
                   <li>
                     <label class="check">
-                      <input class="check-input visually-hidden" type="checkbox" name="parking"><span class="check-box"></span>Парковка
+                      <input class="check-input visually-hidden" type="checkbox" name="parking"><span class="check-box" aria-label="парковка"></span>Парковка
                     </label>
                   </li>
                   <li>
                     <label class="check">
-                      <input class="check-input visually-hidden" type="checkbox" name="WI-FI"><span class="check-box"></span>WI-FI
+                      <input class="check-input visually-hidden" type="checkbox" name="WI-FI"><span class="check-box" aria-label="WI-FI"></span>WI-FI
                     </label>
                   </li>
                 </ul>
@@ -53,18 +53,18 @@
                   <li>
                     <label class="check">
                       <input class="check-input visually-hidden" type="checkbox" name="hotel">
-                      <span class="check-box"></span>Гостиница
+                      <span class="check-box" aria-label="гостиница"></span>Гостиница
                     </label>
                   </li>
                   <li>
                     <label class="check">
                       <input class="check-input visually-hidden" type="checkbox" name="motel">
-                      <span class="check-box"></span>Мотель
+                      <span class="check-box" aria-label="мотель"></span>Мотель
                     </label>
                   </li>
                   <li>
                     <label class="check">
-                      <input class="check-input visually-hidden" type="checkbox" name="appartaments"><span class="check-box">
+                      <input class="check-input visually-hidden" type="checkbox" name="appartaments"><span class="check-box" aria-label="аппортаменты">
                       </span>Апартаменты
                     </label>
                   </li>
@@ -74,8 +74,8 @@
             <div class="filter-range">
               <div class="filter-range-title">Стоимость в сутки (Р):</div>
               <div class="price-controls">
-                <label class="min-price"><input type="text" name="min price" value=" ОТ 0"></label>
-                <label class="max-price"><input type="text" name="max price" value="ДО 3000"></label>
+                <label class="min-price"><input type="text" aria-label=" минимальная стоимость" name="min price" value=" ОТ 0"></label>
+                <label class="max-price"><input type="text" aria-label=" максимальная стоимость" name="max price" value="ДО 3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale">
@@ -99,15 +99,15 @@
             <a href="">По типу</a>
             <a href="">По рейтингу</a>
           </div>
-          <a class="arrow-1" href=""></a>
-          <a class="arrow-2" href=""></a>
+          <a class="arrow-1" aria-label="от минимального к максимальному" href=""></a>
+          <a class="arrow-2" aria-label="от максимального к минимальному" href=""></a>
         </div>
         </div>
       </div>
       <ul class="hotels">
         <div class="container-2">
           <li class="hotel-name">
-          <img src="img/Amara%20Resort%20&%20Spa.jpg" width="135px" alt="Amara Resort & Spa">
+          <img src="img/Amara%20Resort%20&%20Spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
             <div class="hotels-info">
               <h3>Amara Resort & Spa</h3>
               <p>Гостиница <span>От 4000 Р.</span></p>
@@ -129,7 +129,7 @@
         </div>
         <div class="container-2">
           <li class="hotel-name">
-          <img src="img/Desert-Quail-Inn.jpg" alt="/Desert-Quail">
+          <img src="img/Desert-Quail-Inn.jpg" width="135" height="90" alt="/Desert-Quail">
           <div class="hotels-info">
             <h3>Desert Quail Inn</h3>
             <p>Мотель <span>От 3000 Р.</span></p>
@@ -150,7 +150,7 @@
         </div>
         <div class="container-2">
           <li class="hotel-name">
-          <img src="img/Villas%20at%20Poco%20Diablo.jpg" alt="Villas at Poco Diablo">
+          <img src="img/Villas%20at%20Poco%20Diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           <div class="hotels-info">
             <h3>Villas at Poco Diablo</h3>
             <p>Апартаменты <span>От 2000 Р.</span></p>
@@ -173,16 +173,16 @@
       <footer class="footer">
       <div class="info">
         <p>#visitSEDONA</p> 
-        <p><a href="">Тел: +7(495) 666-02-66</a></p>
+        <p><a href="tel:+74956660266">Тел: +7(495) 666-02-66</a></p>
       </div>
       <ul class="social">
-        <li><a href=""><img src="img/twitter.svg" alt="Twitter"></a></li>
-        <li><a href=""><img src="img/fb-icon.svg" alt="Facebook"></a></li>
-        <li><a href=""><img src="img/youtube.svg" alt="youtube"></a></li>
+        <li><a href=""><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+        <li><a href=""><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+        <li><a href=""><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a></li>
       </ul>
       <div class="academy-site">  
         <p>Website by</p>
-        <a class="academy" href=""><div></div></a>
+        <a class="academy" aria-label="разработчик" href="https://htmlacademy.ru/intensive/htmlcss"><div></div></a>
       </div>  
       </footer>
     </div>
