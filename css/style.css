@@ -55,10 +55,10 @@ a {
 }
 .main-nav li:nth-child(3){
   margin-left: auto;
-  text-align: end;
+  text-align: right;
 }
 .main-nav li:nth-child(4){
-  text-align: end;
+  text-align: right;
 }
 
 .main-nav a:hover,
@@ -82,7 +82,7 @@ a {
 section{
   min-height: 507px;
   background-color: #d6e7f1;
-  background-image: url('../img/background-sedona2.jpg');
+  background-image: url("../img/background-sedona2.jpg");
   background-position: top;
   background-repeat: no-repeat;
   display: flex;
@@ -95,7 +95,7 @@ section img{
   min-height: 450px;
 }
 .polygon{
-  background-image: url('../img/polygon.svg');
+  background-image: url("../img/polygon.svg");
   background-position: bottom;
   background-repeat: no-repeat;
   min-height: 57px;
@@ -106,6 +106,8 @@ section img{
   text-align: center;
 }
 .polygon-text h2{
+  width: 50%;
+  margin: 0 auto;
   color: black;
   line-height: 26px;
   padding-top: 61px;
@@ -138,6 +140,8 @@ main h3{
   width: 400px;
 }
 .wrap-text p{
+  width: 76%;
+  margin: 0 auto;
   padding-top: 22px;
 }
 .wrap-photo img{
@@ -185,7 +189,13 @@ main h3{
 }
 .intro h3, 
 .intro-2 h3 {
+  width: 50%;
+  margin: 0 auto;
   padding-bottom: 25px;
+}
+.intro p{
+  width: 76%;
+  margin: 0 auto;
 }
 .intro-2{
   background-color: #eeeeee;
@@ -339,7 +349,7 @@ main h3{
 }
 .calendar{  
   position: absolute;
-  background-image:url('../img/calendar.svg');
+  background-image:url("../img/calendar.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 21px;
@@ -358,7 +368,7 @@ main h3{
   opacity: 1; 
 }
 .calendar:active{
-  background-image: url('../img/Calendar-active.png');
+  background-image: url("../img/Calendar-active.png");
 }
 .number{
   width: 38px;
@@ -382,46 +392,46 @@ main h3{
   background-repeat: no-repeat;
 }
 .num-down{
-  background-image: url('../img/minus.png');
+  background-image: url("../img/minus.png");
   margin-left: 40px;
 }
 .num-up{  
-  background-image: url('../img/plus.png');
+  background-image: url("../img/plus.png");
   margin-right: 54px;
 }
 .num-kids-down{
-  background-image: url('../img/minus.png');
+  background-image: url("../img/minus.png");
   margin-left: 26px;
 }
 .num-kids-up{
-  background-image: url('../img/plus.png');
+  background-image: url("../img/plus.png");
 }
 .num:hover{
   background-color: #ebebeb;
 }
 .num-down:hover{
-  background-image: url('../img/minus-hover.png');
+  background-image: url("../img/minus-hover.png");
 }
 .num-up:hover{
-  background-image: url('../img/plus-hover.png');
+  background-image: url("../img/plus-hover.png");
 }
 .num-kids-down:hover{
-  background-image: url('../img/minus-hover.png');
+  background-image: url("../img/minus-hover.png");
 }
 .num-kids-up:hover{
-  background-image: url('../img/plus-hover.png');
+  background-image: url("../img/plus-hover.png");
 }
 .num-kids-down:active{
-  background-image: url('../img/minus-active.png');
+  background-image: url("../img/minus-active.png");
 }
 .num-down:active{
-  background-image: url('../img/minus-active.png');
+  background-image: url("../img/minus-active.png");
 }
 .num-kids-up:active{
-  background-image: url('../img/plus-active.png');
+  background-image: url("../img/plus-active.png");
 }
 .num-up:active{
-  background-image: url('../img/plus-active.png');
+  background-image: url("../img/plus-active.png");
 }
 .search-btn{
   margin-top: 24px;
@@ -518,7 +528,7 @@ main h3{
   opacity: 0.5;
 }
 .academy div{
-  background-image: url('../img/logo-htmlacademy.svg');
+  background-image: url("../img/logo-htmlacademy.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 117px;
@@ -526,10 +536,10 @@ main h3{
   margin-top: 10px;
 }
 .academy div:hover{
-  background-image: url('../img/logo-htmlacademy-hover.png');
+  background-image: url("../img/logo-htmlacademy-hover.png");
 }
 .academy div:active{
-  background-image: url('../img/logo-htmlacademy-active.png');
+  background-image: url("../img/logo-htmlacademy-active.png");
 }
 /*------------------------------------CATALOG-------------------------------------*/
 
@@ -560,7 +570,7 @@ fieldset, ul{
 }
 .filter{
   background-color: #283b42;
-  background-image: url('../img/filter-background.jpg');
+  background-image: url("../img/filter-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   width: 1200px;
@@ -769,7 +779,7 @@ fieldset, ul{
   border: none;
   }
 .arrow-1{
-  background-image: url('../img/icon-up-dir.svg');
+  background-image: url("../img/icon-up-dir.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 11px;
@@ -779,7 +789,7 @@ fieldset, ul{
   margin-left: auto;
 }
 .arrow-2{
-  background-image: url('../img/icon-down-dir.svg');
+  background-image: url("../img/icon-down-dir.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 11px;
@@ -803,11 +813,11 @@ fieldset, ul{
   opacity: 1;
 }
 .arrow-1:active{
-  background-image: url('../img/icon-up-dir-active.jpg');
+  background-image: url("../img/icon-up-dir-active.jpg");
   opacity: 1;
  }
 .arrow-2:active{
-  background-image: url('../img/icon-down-dir-active.jpg');
+  background-image: url("../img/icon-down-dir-active.jpg");
   opacity: 1;  
 }
 .hotels{
@@ -817,6 +827,9 @@ fieldset, ul{
   display: flex;
   align-items: center;
   padding: 30px 73px;
+}
+.hotels li{
+  border-bottom: 1px solid #e5e5e5;
 }
 .hotels img{
   width: 135px;
@@ -861,7 +874,8 @@ fieldset, ul{
 .detailed{
   width: 110px;
   height: 27px;
-  border: none;
+  text-align: center;
+  line-height: 27px;
   background-color: #81b3d2;
   color: white;
   text-transform: uppercase;
@@ -880,7 +894,8 @@ fieldset, ul{
 .book{
   width: 142px;
   height: 27px;
-  border: none;
+  line-height: 27px;
+  text-align: center;
   background-color: #766357;
   color: white; 
   text-transform: uppercase;
@@ -897,7 +912,7 @@ fieldset, ul{
   color: #65564e; 
 }
 .stars li{
-  background-image: url('../img/star.svg');
+  background-image: url("../img/star.svg");
   background-position: top;
   background-repeat: no-repeat;
   width: 22px;
