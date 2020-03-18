@@ -368,7 +368,7 @@ main h3{
   opacity: 1; 
 }
 .calendar:active{
-  background-image: url("../img/Calendar-active.png");
+  background-image: url("../img/calendar-active.png");
 }
 .number{
   width: 38px;
