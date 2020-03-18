@@ -7,8 +7,10 @@ var date_on = document.querySelector(".date-on");
 var form = document.querySelector("form");
 var date_off = document.querySelector(".date-off");
 var number = document.querySelector(".number-parents");
+var form_close = document.querySelector(".search-form-open")
         
-          
+form_close.classList.remove("search-form-open");
+
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("search-form-show");
