@@ -1,7 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-}
+
 html {
   box-sizing: border-box; 
 }
@@ -10,19 +7,13 @@ html {
 }
 
 body{
-  
-  font-family: "PT Sans", "Arial", sans-serif;
-  
+  font-family: "PT Sans", "Arial", sans-serif; 
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
-}
-a {
-  text-decoration: none;
-  color: black;
 }
 .container{
   width: 1200px;
@@ -48,6 +39,7 @@ a {
   position: relative;
   background-color: white;
 }
+
 .main-nav ul{
   display: flex;  
   flex-wrap: wrap;
@@ -67,7 +59,10 @@ a {
 .main-nav li:nth-child(4){
   text-align: right;
 }
-
+.main-nav a{
+  text-decoration: none;
+  color: black;
+}
 .main-nav a:hover,
 .main-nav a:focus{
   color: #81b3d2;
@@ -120,7 +115,6 @@ section img{
   padding-top: 61px;
   padding-bottom: 30px;  
 }
-
 main{
   background-color: white;
 }
@@ -136,6 +130,7 @@ main h3{
 }
 .wrap-text h3{
   color: white;
+  margin: 0px;
   padding-top: 45px;
   padding-bottom: 3px;
 }
@@ -154,7 +149,6 @@ main h3{
 .wrap-photo img{
   display: block;
 }
-
 .intro{ 
   text-align: center;
   display: flex;
@@ -225,8 +219,6 @@ main h3{
 .Advantages-num{
   padding-bottom: 20px;
 }
-
-
 /*------------------------------------FORM-------------------------------------*/
 .form-title{
   text-align: center;
@@ -241,20 +233,23 @@ main h3{
 }
 .form-title p{
   line-height: 24px;
-  margin-bottom: 77px;
+  margin-bottom: 48px;
+}
+.form-title a{
+  text-decoration: none;
 }
 .form-title button{
   border: none;
 }
 .open-form{
-  padding: 28px 139px;
+  width: 568px;
+  height: 84px;
   background-color: #766357;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: white;
-  cursor: pointer;
 }
 .open-form:hover{
   background-color: #604e43;
@@ -266,7 +261,7 @@ main h3{
 .search-form{
   width: 568px;
   height: 395px;
-  top: 239px;
+  top: 240px;
   background-color: white;
   margin-left: 316px;
   position: absolute;
@@ -470,7 +465,6 @@ main h3{
 }
 .map{
   position: relative;
-  margin-top: 28px;
 }
 .map iframe{
   position: relative;
@@ -494,7 +488,6 @@ main h3{
   padding: 0 92px;
   padding-top: 31px;
   justify-content: space-between;
-
 }
 .info{
   padding-left: 32px;
@@ -517,6 +510,10 @@ main h3{
   text-align: left;
   margin: 0;
   padding-bottom: 5px;  
+}
+.info a{
+  text-decoration: none;
+  color: black;
 }
 .social{
   display: flex;
@@ -774,6 +771,8 @@ fieldset, ul{
 .sort a{
   font-size: 12px;
   line-height: 18px;
+  text-decoration: none;
+
 }
 .sort-select{
   width: 237px;
@@ -844,10 +843,14 @@ fieldset, ul{
 .hotel-name{
   display: flex;
   align-items: center;
-  padding: 30px 73px;
+  padding: 25px 73px;
+  padding-bottom: 31px;
 }
 .hotels li{
   border-bottom: 1px solid #e5e5e5;
+}
+.hotels a{
+  text-decoration: none;
 }
 .hotels img{
   width: 135px;
@@ -857,11 +860,23 @@ fieldset, ul{
 .hotels-info{
   width: 260px;
 }
+.hotel-title{
+  font-weight: bold;
+  font-size: 21px;
+  color: black;
+}
+.hotel-title:hover{
+  color: #81b3d2;
+}
+.hotel-title:active{
+  color: #cacaca;
+}
 .hotels-info h3{
   line-height: 15px;
 }
 .hotels-info p{
-  padding: 13px 0px;
+  padding: 9px 0px;
+  padding-bottom: 13px;
   display: flex;
   width: 100%;
 }
@@ -940,12 +955,3 @@ fieldset, ul{
   overflow: hidden;
   border: none;
 }
-
-
-
-
-
-
-
-
-
